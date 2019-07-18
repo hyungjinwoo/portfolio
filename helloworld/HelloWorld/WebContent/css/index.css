@@ -1,0 +1,110 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Oxygen|Poiret+One|Nanum+Gothic|Song+Myung&display=swap');
+
+div#main-container{
+	text-align: center;
+}
+
+/* 메인로고 */
+div#main{
+	position: relative;
+}
+
+div#main span{
+	font-family: Poiret One;
+	font-weight: bold;
+	position: relative;
+	font-size: 70px;
+	top: 70px;
+	color: #3c3c3c;
+	text-shadow: 2px 2px 2px lightgray;
+}
+
+div#main img#logo_img{
+	position: absolute;
+	width: 100px;
+	height: 100px;
+	top: 18px;
+    left: 459px;
+}
+
+
+/* 검색창 */
+div#search{
+	position: relative;
+	top: 120px;
+	font-family:Nanum Gothic;
+	text-align: center;
+}
+
+div#search input#srchNation{
+	width:500px;
+	border: 1px solid grey;
+	border-radius: 30px;
+	padding: 10px;
+}
+
+div#search input:focus{
+    outline: none;
+}
+
+div#search div#destination{
+ 	display:none;
+	position: relative;
+    padding: 10px;
+    min-height: 130px;
+    border-radius: 10px;
+    border: 1px dotted grey;
+    margin: 0 auto;
+    width: 700px;
+}
+
+
+/*인덱스 페이지  검색 */
+/*국가 입력 자동완성  */
+div#search div#autocomplete-container{
+	
+}
+ul#autocomplete{
+	width: 500px;
+	border: none;
+	border-left: 3px solid lightblue;
+	position:relative;
+	display: inline-block;
+	padding: 0;
+	margin: 10px auto;
+	display:none;
+	text-align: left;
+}
+ul#autocomplete li{
+	margin: 10px;
+	list-style: none;
+	cursor: pointer;
+}
+ul#autocomplete li.sel{
+	background: pink;
+	color:white;
+}
+/*사용자 입력값 하이라이트처리*/
+span.srchval{color:red;}
+div#destination {
+	border: 1px solid;
+}
+/*나라 고르기  */
+span.nation{
+	color:black;
+}
+
+span.nation:hover {
+	color: #da677b;
+	font-weight:bold;
+	cursor: pointer;
+}
+/*일정고르기  */
+
+span.days:hover{
+	color: blue;
+	cursor: pointer;
+	} 
+h3#days, span.days{
+	display:none;}

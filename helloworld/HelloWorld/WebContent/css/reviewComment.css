@@ -1,0 +1,32 @@
+@charset "UTF-8";
+
+table#tbl-comment{
+	width: 100%;
+	border: 8px solid #ccc;
+ 	border-radius: 4px;
+ 	box-sizing: border-box;
+	border-collapse: collapse;
+}
+table#tbl-comment tr th{
+	width: 300px;
+	border: 8px solid #ccc;
+ 	border-radius: 4px;
+ 	box-sizing: border-box;
+	padding: 10px 0;
+}
+table#tbl-comment tr td{
+	border: 8px solid #ccc;
+ 	border-radius: 4px;
+ 	box-sizing: border-box;
+	padding: 5px 0 5px 15px;
+	text-align: left;
+}
+
+#tbl-comment tr.level2{
+	color: gray;
+	font-size: 14px;
+}
+#tbl-comment tr.level2 td:first-of-type{
+	padding-left: 100px;
+}
+

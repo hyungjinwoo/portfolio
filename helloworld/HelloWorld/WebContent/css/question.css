@@ -1,0 +1,231 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Oxygen|Poiret+One|Nanum+Gothic|Rubik&|=swap');
+/********** Q&A **********/
+section.question-container h1{
+    margin: 20px;
+    font-size: 40px;
+    position: relative;
+    left: 140px;
+    color: #4c4c4c;
+    font-family: Montserrat;
+    font-weight: lighter;
+}
+/* 인덱스 */
+section.question-container div#question-index{
+    position: relative;
+    width: 220px;
+    top: -47px;
+    left: 312px;
+    font-family: Nanum Gothic;
+}
+section.question-container div#question-index a{
+    width: 100px;
+    height: 20px;
+    padding-bottom: 5px;
+}
+section.question-container div#question-index a#question-select{
+    width: 100px;
+    height: 20px;
+    padding-bottom: 5px;
+    font-weight: bold;
+    border-bottom: 3px solid #80deea;
+}
+section.question-container div#question-index a:hover{
+    font-weight: bold;
+    border-bottom: 3px solid #80deea;
+}
+/* 글쓰기버튼 */
+section.question-container button#question-write-btn{
+    position: relative;
+    float: right;
+    left: -153px;
+    top: -13px;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family:Nanum gothic;
+    font-weight: bold;
+}
+section.question-container button#question-write-btn:hover{
+    color: white;
+    background: gray;
+}
+/* 페이지바 */
+section.question-container div.pageBar{
+    margin-top: 30px;
+    text-align: center;
+}
+/* 테이블 */
+section.question-container table#question-table{
+    width: 70%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    clear:both;
+}
+section.question-container table#question-table th{
+    background: #5555550d;
+}
+section.question-container table#question-table th, 
+section.question-container table#question-table td{
+    border-top: 1px solid gray;
+    padding: 10px 0;
+    text-align: center;
+}
+section.question-container table#question-table a:hover{
+    color: #80deea;
+    font-weight: bold;
+}
+/*********** Q&A 글쓰기 페이지***********/
+section.question-container table#questionForm-table{
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+    clear: both;
+}
+section.question-container table#questionForm-table div{
+    position: relative;
+    width: 90px;
+    height: 20px;
+    padding: 5px 10px;
+    border-radius: 50px;
+    background: #80deea;
+    color: white;
+    text-shadow: 1px 1px 1px grey;
+}
+section.question-container table#questionForm-table tr td{
+    padding: 10px;
+    text-align: left;
+}
+section.question-container table#questionForm-table select#sel{
+    position:relative;
+    width: 155px;
+    font-family: 맑은고딕;
+    border: none;
+    border-bottom: 1px solid gray;
+}
+section.question-container table#questionForm-table select#sel:focus,
+section.question-container table#questionForm-table input#noticeTitle:focus,
+section.question-container table#questionForm-table input#questTitle:focus,
+section.question-container table#questionForm-table textarea#questContent:focus,
+section.question-container table#questionForm-table input[type=submit]:focus{
+    outline: none;
+}
+section.question-container table#questionForm-table input#questTitle{
+    position: relative;
+    width: 570px;
+    height: 20px;
+}
+section.question-container table#questionForm-table textarea#questContent{
+    position: relative;
+    width: 570px;
+    height: 300px;
+}
+section.question-container table#questionForm-table input[type=submit],
+section.question-container table#questionForm-table input[type=button]{
+    position: relative;
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: Nanum Gothic;
+    margin-top: 50px;
+}
+/*********** 문의사항 글보기 페이지***********/
+section.question-container table#questView-table{
+    width: 70%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+    
+}
+section.question-container table#questView-table td#questView-writer{
+    padding-left: 20px;
+    text-align:left;
+    height: 50px;
+}
+section.question-container table#questView-table td#questView-date{
+    text-align: right;
+    font-size: 13px;
+}
+section.question-container table#questView-table td#questView-writer span{
+    position: relative;
+    top: -10px;
+    left: 5px;
+}
+section.question-container table#questView-table img#profile-viewer_{
+    width: 30px;
+    height: 30px;
+    margin: 0 auto;
+}
+section.question-container table#questView-table tr div#questView-content{
+    width: 95%;
+    min-height: 300px;
+    border-bottom: 1px solid lightgray;
+    border-top: 1px solid lightgray;
+    padding: 20px;
+    margin-bottom: 20px;
+    text-align: left;
+}
+section.question-container table#questView-table tr div#questView-content img{
+	width: 600px;
+	height: 600px;
+}
+section.question-container table#questView-table tr td#questView-title{
+    padding: 10px;
+    text-align: left;
+    font-size: 30px;
+    font-weight: bold;
+}
+/* 댓글창 */
+section.question-container table#questView-table tr div#questView-comment{
+    margin-bottom: 50px;
+    text-align: left;
+    padding: 0px 20px;
+    position: relative;
+}
+section.question-container table#questView-table tr div#questView-comment p{
+    width: 100px;
+    padding: 5px;
+    font-size: 14px;
+    font-weight: bold;
+}
+section.question-container table#questView-table tr div#questView-comment span#comment-content{
+    padding-left:20px;
+}
+section.question-container table#questView-table tr div#questView-comment span#comment-date{
+    float: right;
+    font-size: 13px;
+}
+section.question-container table#questView-table tr div#questView-comment button{
+    background: none;
+    width: 45px;
+    height: 16px;
+    margin-left: 10px;
+    color: red;    
+}
+section.question-container table#questView-table tr td input#comment-button{
+    font-family: Nanum Gothic;
+    font-weight: bold;
+    position: relative;
+    top: -14px;
+    width: 49px;
+    height: 36px;
+    border: none;
+}
+section.question-container table#questView-table tr td button{
+    position: relative;
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: Nanum Gothic;
+}
+section.question-container table#questView-table tr td button:hover{
+    color: white;
+    background: gray;
+}

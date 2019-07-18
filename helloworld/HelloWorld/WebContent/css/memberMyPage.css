@@ -1,0 +1,117 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Abel|Montserrat|Oxygen|Poiret+One|Nanum+Gothic|Song+Myung&display=swap');
+
+/* 마이 페이지 */
+section#update-container{
+    width: 1000px;
+    height: 700px;
+    margin: 50px auto;
+    position: relative;
+    z-index: 5;
+}
+
+section form[name=memberUpdateFrm]{
+    width:800px;
+    margin: 0 auto;
+}
+table#memberUpdateTable{
+    height: 650px;
+    position: relative;
+    margin: 0 auto;
+    left: 140px;
+    top: 25px;
+    border-spacing: 20px;
+}
+section form[name=memberUpdateFrm] img#profile-viewer{
+    width: 200px;
+    height: 200px;
+    cursor: pointer;
+    top: 50px;
+    left: -225px;
+    position: absolute;
+    border-radius: 100px;
+}
+#deleteProfile{
+	cursor: pointer;
+    position: relative;
+    left: -46px;
+    top: -150px;
+    font-weight: bold;
+}
+
+input:focus{
+    outline: none;
+}
+table#memberUpdateTable tr th{
+    background: rgb(152, 180, 224);
+    border-radius: 50px;
+    width: 100px;
+    height: 29px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+table#memberUpdateTable tr td{
+	font-family: "Nanum Gothic", 맑은고딕;
+	font-size: 15px;
+}
+
+table#memberUpdateTable tr td input{
+    height: 20px;
+    margin: 0px 5px 5px 20px;
+    border: none;
+    border-bottom: 1px solid gray;
+    font-family: "Nanum Gothic", 맑은고딕;
+    
+    font-size: 15px;
+}
+select#question{
+    width: 155px;
+    margin-left: 13px;
+    padding: 3px;
+    font-family: "Nanum Gothic", 맑은고딕;
+    border: none;
+    border-bottom: 1px solid gray;
+    font-size: 15px;
+}
+div#enroll-submit{
+    position: absolute;
+    top: 480px;
+    left: -190px;
+    height: 50px;
+}
+table#memberUpdateTable div#enroll-submit input{
+    width: 100px;
+    height: 35px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    font-family: Nanum Gothic;
+}
+
+/*관심사*/
+span.interest-span{
+    font-size: 15px;
+    
+    font-family: "Nanum Gothic";
+    position: relative;
+	left: 15px;
+}
+input[class="interest-checkbox"] + label{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	border: 2px solid #c3d5f4;
+	cursor: pointer;
+	position: relative;
+	top: 3px;
+	left: 20px;
+	margin-right: 10px;
+}
+input[class="interest-checkbox"]:checked + label {
+	background-color: #98b4e0;
+}
+input[class="interest-checkbox"]{
+	display:none;
+}

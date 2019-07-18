@@ -1,0 +1,404 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Oxygen|Poiret+One|Nanum+Gothic|Song+Myung&display=swap');
+body{
+	margin-top: 0px;
+}
+
+div#container{
+    width:1024px;
+    margin: 0 auto;
+    position: relative;    
+    font-family: "Nanum Gothic";
+}
+
+/* header */
+div#header-container{
+    height:90px;
+    position: relative;
+	border-bottom-style: double;
+    border-bottom-color: gray;
+}
+div#header2-container{
+    height:90px;
+    position: relative;
+}
+div.header span{
+    font-family: Poiret One;
+    color: rgb(76, 76, 76);
+    left: 59px;
+    top: 43px;
+    font-weight: bold;
+    font-size: xx-large;
+    position: relative;
+}
+
+div.header a{
+    text-decoration: none;  
+}
+div.header img#logo_img{
+    position: absolute;
+    top: 11px;
+    left: 108px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50px;
+    box-shadow: -1px -1px 1px grey;
+}
+div.header img#chat_img{
+    position: absolute;
+    top: 30px;
+    right: 90px;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+div.header img#menu_img{
+    position: absolute;
+    top: 34px;
+    right: 35px;
+    width: 45px;
+    height: 40px;
+    cursor: pointer;
+}
+div#index{
+    font-family:Nanum Gothic;
+    font-weight: bolder;
+    position: absolute;
+    right:200px;
+    font-size: 10px;
+}
+div#index a{
+    color: gray;    
+}
+/* 채팅화면 */
+#container #chatList-container{
+    position: fixed;
+    width: 320px;
+    height: 500px;
+    left: 700px;
+    top: 30px;
+    background: powderblue;
+    display: none;
+    box-shadow: 5px 5px 5px grey;
+    z-index: 500;
+    text-align: center;
+    
+}
+div#chatList-container #chat-title{
+    position: relative;
+    top: 30px;
+    color: white;
+    font-weight: bold;
+    font-size: 20px;
+}
+div#chatList-container #chat-close{
+    font-family: Montserrat;
+    position: relative;
+    top: 5px;
+    right: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    float: right;
+}
+div#chatList-container #memberIdList-container{
+    position: absolute;
+    left: 22px;
+    top: 50px;
+    font-size: 13px;
+    clear: both;
+}
+div#chatList-container #memberIdList-container #chatroom-show-btn{
+	border: 1px dashed grey;
+	margin: 5px;
+	margin-top: 15px;
+	border-radius: 10px;
+	background: rgba(0,0,0,0);
+	font-family: Montserrat;
+	
+}
+div#chatList-container #chat-container{
+    position: relative;
+    top: 48px;
+    height: 450px;
+    padding: 0 18px 18px 18px;
+}
+::-webkit-scrollbar{width: 10px; height: 10px;}
+::-webkit-scrollbar-thumb {background-color:rgba(122,122,122,0.5); border-radius: 5px;}
+::-webkit-scrollbar-thumb:hover {background: #555;}
+div#chatList-container #chat-container #chatLog-container{
+    overflow-y: scroll;
+    border-radius: 5px;
+    width: 285px;
+    height: 350px;
+    margin-bottom: 8px;
+    margin-top: 15px;
+}
+div#chatList-container #chat-container #chatLog-container #msg{
+    font-family: Nanum Gothic;
+    padding: 8px 10px;
+  /*   background: #fce062; */
+    min-width: 70px;
+    max-width: 200px;
+    font-size: 15px;
+    margin: 7px 7px 0 7px;
+    border-radius: 10px;
+    clear: both;
+}
+div#chatList-container #chat-container div#input{
+    width:295px;
+    height: 50px;
+    text-align: center;
+    position:relative;
+}
+div#input input{
+    border-radius: 20px;
+    border: none;
+    margin-right: 5px;
+    padding:5px;
+    width: 200px;
+}
+div#input input:focus{
+	outline: none;
+}
+div#input button{
+    border: none;
+    width: 50px;
+    height: 25px;
+    border-radius: 15px;
+    background: gray;
+    color: white;
+}
+.reciver{
+    text-align: left;
+    float: left;
+    background: pink;
+    
+}
+.sender{
+    text-align: right;
+    float: right;
+    background: yellow;
+}
+
+/* 메뉴바 */
+div#menubar{
+    font-family: Nanum Gothic;
+    font-weight: bold;
+    width: 290px;
+    height: 100%;
+    color: #494949;
+    background: #e2e2e2;
+    position: absolute;
+    top: 0px;
+    right: -290px;
+    float: right;
+    z-index: 999;
+    display: none;
+}
+div#menubar #menubar-close{
+    font-family:Montserrat;
+    position: absolute;
+    left: 10px;
+    top:5px;
+    font-size: 18px;
+    cursor: pointer;
+}
+
+
+div#menubar div#menu ul#menu-list1{
+	list-style-image: url("/helloworld/images/plan.png");
+}
+div#menubar div#menu ul#menu-list2{
+	list-style-image: url("/helloworld/images/wish.png");
+}
+div#menubar div#menu ul#menu-list3{
+	list-style-image: url("/helloworld/images/review.png");
+}
+div#menubar div#menu ul#menu-list4{
+	list-style-image: url("/helloworld/images/write.png");
+}
+div#menubar div#menu ul#menu-list5{
+	list-style-image: url("/helloworld/images/question.png");
+}
+div#menubar div#menu ul#menu-list6{
+	list-style-image: url("/helloworld/images/notice.png");
+}
+
+div#menubar div#menu ul{
+	padding: 0;
+	margin-top: 10px;
+	
+}
+div#menubar div#menu ul li{
+	margin-left: 70px;
+    height: 40px;
+    line-height: 40px;
+}
+div#menubar div#menu ul li a{
+	position: absolute;
+	margin-left: 5px;
+}
+
+
+div#menu{
+	width: 290px;
+}
+
+div#menu{
+    font-size: 16px;
+    position: absolute;
+    width: 200px;
+    top: 250px;
+}
+
+div#menu li a:hover{
+    color: rgb(21, 88, 196);
+     text-decoration: none;
+}
+
+
+
+
+/* 로그인폼(로그인전) */
+form#loginfrm{
+    position: absolute;
+    top: 39px;
+    left: 25px;
+}
+div.login-container input{
+    border-radius: 20px;
+    border: none;
+    width: 125px;
+    height: 27px;
+    font-size: 12px;
+    font-family: Nanum Gothic;
+    padding-left: 10px;
+/*     cursor: pointer; */
+}
+div.login-container input:focus{
+	outline: none;
+}
+span#saveId-span{
+    position: relative;
+    font-size: 13px;
+}
+input[id="saveId"] + label{
+	display: inline-block;
+	width: 12px;
+	height: 12px;
+	border: 2px solid #999999;
+	cursor: pointer;
+	position: relative;
+	top: 3px;
+}
+input[id="saveId"]:checked + label {
+	background-color: #575960;
+}
+input[id="saveId"]{
+	display:none;
+}
+
+form#loginfrm img{
+    width: 35px;
+    height: 35;
+    padding-right: 7px;
+}
+form#loginfrm #login_btn{
+    position: absolute;
+    padding: 5px;
+    left: 190px;
+    top: 42px;
+    width: 56px;
+    height: 75px;
+    cursor:pointer;
+    font-family: Nanum Gothic;
+	font-weight: bold;
+    
+}
+form#loginfrm input[type=button],
+form#loginfrm label{
+	font-family: Nanum Gothic;
+	font-weight: bold;
+}
+form#loginfrm .membermenu{
+    color: gray;
+    background: none;
+    width: 121px;
+}
+form#loginfrm .membermenu:hover{
+    cursor: pointer;
+    color: #555555;
+    font-weight: bold;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+form#loginfrm a:hover{
+    color: #2dac89;
+    font-weight: bold;
+}
+
+
+
+form#loginfrm span.text{
+	font-family: Nanum Gothic;
+	font-weight: bold; 
+}
+
+/* 로그인 후  */
+table#logged-in{
+	position: relative;
+	top: 50px;
+	left: 10px;
+	border-spacing: 10px;
+}
+
+table#logged-in input{
+	cursor: pointer;
+}
+img#profile-viewer_{
+	border-radius: 100px;
+	width: 120px;
+	height: 120px;
+}
+
+table#logged-in tr td input[type=button]{
+	margin-top:10px;
+	font-family: Nanum Gothic;
+	font-weight: bold;
+}
+table#logged-in tr td {
+	font-family: Nanum Gothic;
+	font-weight: bold;
+	font-size: 20px;
+}
+table#logged-in tr td #adminPageBtn{
+	border: none;
+	background: rgba(0,0,0,0);
+	margin-top: 10px;
+    text-align: left;
+    padding: 0;
+}
+
+
+
+
+/* content */
+section#content {
+    float:left; 
+    width:1024px; 
+    min-height:500px; 
+    z-index: 0;
+    }
+    
+/* footer */
+footer{
+    font-size: 15px;
+    color: gray;
+    clear:both;
+    height:75px; 
+    text-align:center;
+    padding-top:40px;
+}

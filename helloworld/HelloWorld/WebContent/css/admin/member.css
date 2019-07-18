@@ -1,0 +1,96 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Oxygen|Poiret+One|Nanum+Gothic|Song+Myung&display=swap');
+
+#memberFind{
+	width: 800px;
+	margin: 30px auto;
+	position: relative;
+	
+}
+#memberFindInput{
+	width: 300px;
+	text-align: center;
+	font-family: "Nanum Gothic";
+    font-weight: bold;
+    position: absolute;
+}
+#memberFind #memberFindInput input{
+	border: none;
+	border-bottom: 2px solid grey;
+	padding:5px;
+	margin : 10px;
+	outline: none;
+	font-size: 20px;
+	font-family: "Nanum Gothic";
+    font-weight: bold;
+	
+}
+#memberFind #memberFindInput input:focus{
+	transform:scale(1.2,1.2);
+    transition-duration: 1s;
+    transition-timing-function: ease;
+    outline: none;
+}
+	
+button#findBtn{
+	margin-top: 20px;
+	border-radius:20px;
+	border: none;
+	background: lightblue;
+	width: 100px;
+	height: 30px;
+	font-family: "Montserrat";
+	font-weight: bold;
+}
+
+
+#memberFindBody{
+	width: 480px;
+	text-align: center;
+	
+    
+    position: absolute;
+    left: 350px;
+}
+
+#memberFindBody #memberFindTable #memberFindTablebo{
+	border-radius:20px;
+	border: 2px solid;
+	padding : 10px;
+	width: 450px;
+    border-spacing: 15px;
+    margin: 0 auto;
+	
+}
+
+#memberFindBody #memberFindModi{
+	position:relative;
+    margin : 0 auto; 
+    margin-left : 3%;
+    
+    background : white;
+    border-radius: 10%;
+   	border: 3px solid;
+}
+#memberFindBody #memberFindTable #memberFindTablebo tr{
+	padding: 10px;
+	
+}
+#memberFindBody #memberFindTable #memberFindTablebo td{
+   	font-weight: normal;
+   	cursor: pointer;
+}
+#memberFindBody #pageBar{
+	cursor: pointer;
+	height: 50px;
+	margin: 20px;
+}
+#memberFindBody #pageBar p{
+	display: inline;
+	margin: 20px;
+	font-family: "Nanum Gothic";
+    font-weight: bold;
+}
+#memberFindBody #pageBar p.cPage{
+	color: blue;
+}

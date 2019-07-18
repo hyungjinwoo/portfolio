@@ -1,0 +1,183 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Oxygen|Poiret+One|Nanum+Gothic|Song+Myung&display=swap');
+
+section#review-container{
+	width: 800px;
+	margin: 0 auto;
+	text-align: center;
+}
+section#review-container h2{
+	margin: 10px 0;
+	text-align: left;
+	font-size: 2em;
+	font-weight: 1500;
+}
+section#review-container table#tbl-board tr th span.review-span{
+	border: 1px ;
+	border-radius: 50px;
+	width: 100px;
+	height: 20px;
+	display: inline-block;
+	padding: 5px;
+	background: rgb(145, 187, 255);
+	color: white;
+	margin: 10px 20px 10px 0px;
+}
+section#review-container table#tbl-board td{
+	text-align: left;
+}
+table#tbl-board tr td select#reviewCategory-select{
+	width: 200px;
+	height: 30px;
+	font-family: "Nanum Gothic";
+	font-size: 15px;
+}
+table#tbl-board tr td input[type=text]{
+	width: 600px;
+	height: 30px;
+	font-family: "Nanum Gothic";
+	font-size: 15px;
+}
+table#tbl-board tr td textarea{
+	width: 600px;
+	height: 400px;
+	font-family: "Nanum Gothic";
+	font-size: 15px;
+}
+table#tbl-board tr td select#reviewCategory-select:focus,
+table#tbl-board tr td input[type=text]:focus,
+table#tbl-board tr td textarea:focus{
+	outline: none;
+}
+table#tbl-board tr th input[type=button],
+table#tbl-board tr th input[type=submit]{
+	border: 1px solid;
+	border-radius: 50px;
+	width: 130px;
+	height: 40px;
+	margin: 20px;
+	margin-top: 50px;
+	background: rgb(34, 110, 232);
+	color:white;
+	font-family: "Nanum Gothic";
+	font-size: 15px;
+	font-weight: bold;
+	cursor: pointer;
+}
+table#tbl-board tr th input[type=button]:hover,
+table#tbl-board tr th input[type=submit]:hover{
+	background: gray;
+}
+table#tbl-board tr td div#reviewImg-container div.reviewImg-div{
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	margin: 0px 10px 10px 0px;
+	border: 1px solid #aeaeae;
+	cursor: pointer;
+	
+}
+table#tbl-board tr td div#reviewImg-container div#reviewImg-div-1.reviewImg-div{
+	border: 1px solid #aeaeae;
+	position: relative;
+	cursor: pointer;
+}
+
+table#tbl-board tr td div#reviewImg-container div#mainPhoto{
+	width: 100px;
+	height: 20px;
+	background: rgba(0,0,0,0.3);
+	position: absolute;
+	left: -1px;
+	top: 77px;
+	text-align: center;
+	font-size: 13px;
+	padding: 1px;
+	padding-top: 3px;
+	color: white;
+	font-family: Nanum Gothic;
+	font-weight: bold;
+	cursor: pointer;
+}
+/*별점  */
+.star-input>.input,
+.star-input>.input>label:hover,
+.star-input>.input>input:focus+label,
+.star-input>.input>input:checked+label{
+	display: inline-block;
+	vertical-align:middle;
+	background:url('/helloworld/images/grade_img.png') no-repeat;
+}
+.star-input{
+	display:inline-block; 
+	white-space:nowrap;
+	width:225px;
+	height:40px;
+	margin-top: 6px;
+	line-height:30px;
+}
+.star-input>.input{
+	display:inline-block;
+	width:150px;
+	background-size:150px;
+	height:28px;
+	white-space:nowrap;
+	overflow:hidden;
+	position: relative;
+}
+.star-input>.input>input{
+	position:absolute;
+	width:1px;
+	height:1px;
+	opacity:0;
+}
+star-input>.input.focus{
+	outline:1px dotted #ddd;
+}
+.star-input>.input>label{
+	width:30px;
+	height:0;
+	padding:28px 0 0 0;
+	overflow: hidden;
+	float:left;
+	cursor: pointer;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+.star-input>.input>label:hover,
+.star-input>.input>input:focus+label,
+.star-input>.input>input:checked+label{
+	background-size: 150px;
+	background-position: 0 bottom;
+}
+.star-input>.input>label:hover~label{
+	background-image: none;
+}
+.star-input>.input>label[for="p1"]{
+	width:30px;
+	z-index:5;
+}
+.star-input>.input>label[for="p2"]{
+	width:60px;
+	z-index:4;
+}
+.star-input>.input>label[for="p3"]{
+	width:90px;
+	z-index:3;
+}
+.star-input>.input>label[for="p4"]{
+	width:120px;
+	z-index:2;
+}
+.star-input>.input>label[for="p5"]{
+	width:150px;
+	z-index:1;
+}
+.star-input>output{
+	display:inline-block;
+	width:60px; 
+	font-size:18px;
+	text-align:right; 
+	vertical-align:middle;
+}

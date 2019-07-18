@@ -1,0 +1,241 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Oxygen|Poiret+One|Nanum+Gothic|Song+Myung&display=swap');
+
+#admin-container{
+	display : flex; 
+    flex-direction : column;
+    
+    margin: 20px auto 0;
+    	    
+    height: 800px;
+    width: 950px;
+    font-family: Nanum Gothic;
+}
+
+#admin-container #nav{
+	margin-left : 1%; 
+	height:50px;
+	
+	display : flex; 
+	flex-direction : row;
+	justify-content : flex-start; 
+	font-weight: bold;
+	text-align: center;
+    
+}
+#admin-container #nav div{
+   	margin-right : 4%;  
+    max-height:90px;
+}
+#admin-container #nav i{
+	font-size:50px; 
+	color: rgb(102, 153, 255);
+	margin-right: 10px;
+}
+#admin-container #nav i:hover{
+	cursor:pointer;
+}
+
+/*admin Body*/
+#admin-container #adminBody{
+	flex : 7; 
+	border-top: 2px solid grey;
+	border-bottom: 2px solid grey;
+	
+    margin-top: 30px;
+    padding: 20px 0;
+	width:100%;
+}
+#ipCon1 #ipHead{
+	flex : 1; 
+  	margin-left :0 auto;
+  	
+  	font-weight: bolder;
+	font-family: 'Montserrat';
+	font-size: 30px;
+}
+#admin-container #adminBody #initialPage{
+	display : flex; 
+	flex-direction : row;
+	width:100%;
+	height:100%;
+	font-family: Nanum Gothic;
+}
+
+#admin-container #adminBody #initialPage #ipCon1{
+	flex : 2; 
+	display : flex; 
+	flex-direction : column;
+}
+
+#ipCon1 #todayChart{
+	flex : 3; 
+  	margin-left :0 auto;
+  		
+  	display : flex; 
+	flex-direction : row;
+}
+#ipCon1 #todayChart #todayChart-item1{
+	flex : 2; 
+  	display : flex; 
+	flex-direction : column;
+  	align-items : center;
+  	justify-content : center;
+  	background:white;
+  	border: 1px solid lightgrey;
+  
+}
+#todayChart-item1 #tc-item1-c1{
+	flex : 1; 
+  	margin-left :0 auto;
+  	width:90%;
+  	
+	text-align:center;
+	font-weight: bolder;
+	font-family: 'Montserrat';
+	font-size: 30px;
+  		
+}
+						
+#todayChart-item1 #tc-item1-c2{
+	display : flex; 
+	flex : 3; 
+	flex-direction : row;
+	background: rgba(0,0,0,0);
+	border: 1px solid lightgrey;
+	width:90%;
+	margin-bottom:5%;
+	
+	text-align:center;
+}	
+#todayChart-item1 #tc-item1-c2 .cnt{
+	font-weight: bolder;
+	font-family: 'Montserrat';
+	font-size: 30px;
+	text-align:center;
+	margin: 25% auto;
+}
+#todayChart-item1 #tc-item1-c2 #tc-item1-c2-item1{
+	flex : 1;
+}	
+#todayChart-item1 #tc-item1-c2 #tc-item1-c2-item2{
+	flex : 1;
+}	
+#todayChart-item1 #tc-item1-c2 #tc-item1-c2-item3{
+	flex : 1; 
+	font-family: Nanum Gothic;
+	font-weight: bold;
+}
+#todayChart-item1 #tc-item1-c2 div{
+	font-family: Nanum Gothic;
+	font-weight: bold;
+	font-style: normal;
+}
+#todayChart-item1 #tc-item1-c2 div .todayIcon{
+	width: 35px;
+	margin-top: 30px;
+}
+
+#ipCon1 #todayChart #todayChart-item2{
+	flex : 1; 
+  	display : flex; 
+	flex-direction : column;
+	background: rgba(0,0,0,0);
+	border-top: 1px solid lightgrey;	
+	border-bottom: 1px solid lightgrey;	
+	padding: 20px;
+}
+#todayChart-item2 #tc-item2-c1{
+	flex : 1; 
+  	text-align:center;
+  	font-family: Nanum Gothic;
+	font-weight: bold;
+	font-style: normal;
+	font-size: 20px;
+}
+#todayChart-item2 #tc-item2-c2{
+	flex : 5; 
+	font-family: Nanum Gothic;
+	font-style: normal;
+	font-weight: bold;
+}
+#todayChart-item2 #tc-item2-c2 ul{
+	margin : 8% auto;
+	list-style: none;
+}
+#todayChart-item2 #tc-item2-c2 ul li{
+	margin-top: 12px;
+}
+#ipCon1 #connChart{
+	flex : 3; 
+  	margin-left :0 auto;
+  	background: rgba(0,0,0,0);
+	border-left: 1px solid lightgrey;
+	border-bottom: 1px solid lightgrey;
+	
+	font-weight: bold;
+}		
+#admin-container #adminBody #initialPage #ipCon2{
+	flex : 1; 
+	display : flex; 
+	flex-direction : column;
+	background: rgba(0,0,0,0);
+	border: 1px solid lightgrey;	
+}
+#ipCon2 #latelyQna{
+	flex : 1; 
+  	margin-left :0 auto;
+  	display : flex; 
+	flex-direction : column;
+	border-bottom: 1px solid lightgrey;	
+}
+#ipCon2 #latelyQna #latelyQna-head{
+	flex : 1; 
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 20px;
+}
+#ipCon2 #latelyQna #latelyQna-body{
+	flex : 6; 
+}
+#ipCon2 #latelyQna #latelyQna-body ul{
+	list-style: circle;
+}
+#ipCon2 #latelyQna #latelyQna-body li{
+	font-weight: bold;
+	margin-bottom: 12px;
+}
+#ipCon2 #latelyQna #latelyQna-body p{
+	font-size : 20px;
+ 	text-align: right;
+ 	margin-right: 15px;
+}
+#ipCon2 #latelyNotice{
+	flex : 1; 
+  	margin-left :0 auto;
+  	display : flex; 
+	flex-direction : column;
+}
+#ipCon2 #latelyNotice #latelyNotice-head{
+	flex : 1; 
+	font-weight: bold;
+	font-size: 20px;
+	text-align: center;
+	margin-top: 20px;
+}
+#ipCon2 #latelyNotice #latelyNotice-body{
+	flex : 6; 
+}
+#ipCon2 #latelyNotice #latelyNotice-body ul{
+	list-style: circle;
+}
+#ipCon2 #latelyNotice #latelyNotice-body li{
+	font-weight: bold;
+	margin-bottom: 12px;
+}
+#ipCon2 #latelyNotice #latelyNotice-body p{
+	font-size : 20px;
+ 	text-align: right;
+ 	margin-right: 15px;
+}
